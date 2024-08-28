@@ -6,6 +6,10 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/aeth/.zshrc'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit && compinit
+
+
 
 autoload -Uz compinit
 compinit
@@ -24,5 +28,9 @@ setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %B%F{blue}%n@%M: %B%F{#FFB6C1}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 
-export _JAVA_AWT_WM_NONREPARENTING=1
 path+=('/home/aeth/go/bin')
+
+
+
+# aliases
+alias ls="ls -l"
