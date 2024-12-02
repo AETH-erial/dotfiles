@@ -200,4 +200,4 @@ bindsym $mod+r mode "resize"
 }
 
 include /etc/sway/config.d/*
-output "*" bg ~/Pictures/wallpapers/_dark_disco.jpeg fill
+output "*" bg ~/Pictures/wallpapers/wallpaper.jpeg fill
